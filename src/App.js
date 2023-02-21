@@ -4,8 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 
-import { Slide } from './Slide';
-
 
 SwiperCore.use([Autoplay]);
 
@@ -66,10 +64,59 @@ function App() {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
 
-  
+
+      <div className='workWrapper'>
+        <div className='workColumn'>
+          <h3>Work History</h3>
+          <div id="jobList">
+            <div className='work'>
+              <div className='years'>2008-2010</div>
+              <div className='job'>Goldman Sachs - Analyst</div>
+            </div>
+
+            <div className='work'>
+              <div className='years'>2010-2013</div>
+              <div className='job'>Google - Senior Developer</div>
+            </div>
+            
+            <div className='work'>
+              <div className='years'>2013-2017</div>
+              <div className='job'>White House - Communications Director</div>
+            </div>
+            
+          </div>
+        </div>
 
       </div>
+      
+      {/* Educational Container copied from work */}
+      <div className='workWrapper'>
+        <div className='workColumn' id="edColumn">
+          <h3>Education</h3>
+          <div id="jobList">
+            <div className='work'>
+              <div className='years'>2008-2010</div>
+              <div className='job'>Goldman Sachs - Analyst</div>
+            </div>
+
+            <div className='work'>
+              <div className='years'>2010-2013</div>
+              <div className='job'>Google - Senior Developer</div>
+            </div>
+            
+            <div className='work'>
+              <div className='years'>2013-2017</div>
+              <div className='job'>White House - Communications Director</div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+
 
     </div>
   );
